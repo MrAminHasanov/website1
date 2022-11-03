@@ -14,42 +14,56 @@ header{
     width: 100%;
 }
 /*  */
-header ul{
+header>ul{
     display: flex;
 }
-header ul a{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+header>ul>li>a{
     text-decoration: none;
     color: white;
 }
-header a{
+header>ul>li{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     height: 50px;
-    padding: 16px 24px;
     font-size: 15px;
+    padding: 16px 24px;
 }
-header a:hover {
+header>ul>li:hover {
     color: black;
     background-color: rgb(153, 153, 153);
 }
+/*  */
 header .more_dr{
-    display: inline-block;
     position: absolute;
+    display: none;
     top: 100%;
+    left: 0;
 }
-header .more_dr>a{
-    color: yellow;
+header .more_dr  a{
+    text-decoration: none;
+    padding: 10px 50px 10px 20px;
+    color: black;
+    background-color: white;
+}
+header .more_dr a:hover{
+    background-color: rgb(153, 153, 153);
+}
+header ul li:last-child{
+    position: relative;
 }
 header ul li:last-child:hover .more_dr{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 } 
 /*  */
 header>a{
     height: 50px;
     font-size: 15px;
     padding: 15px 21px;
-    color: white;
+    text-decoration: none;
+    color: black;
 }
 header>a:hover{
     background-color: red;
 }
 /* #endregion */
+.s{}
