@@ -1,10 +1,15 @@
 *{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.corecter{
+    width: 768px;
+}
 /* #region header*/
 header{
+    z-index: 2;
     position: fixed;
     height: 50px;
     background-color: black;
@@ -22,7 +27,6 @@ header>ul>li>a{
     color: white;
 }
 header>ul>li{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     height: 50px;
     font-size: 15px;
     padding: 16px 24px;
@@ -60,10 +64,235 @@ header>a{
     font-size: 15px;
     padding: 15px 21px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 header>a:hover{
     background-color: red;
 }
 /* #endregion */
-.s{}
+/* #region main bar1*/
+.bar1{
+    height: 674px;
+}
+.bar1_textbar{
+    line-height: 50px;
+    font-weight: 10;
+    color: white;
+    position: absolute;
+    top: 550px;
+    width: 100%;
+    text-align: center;
+}
+.bar1_textbar h2{
+    font-weight: 200;
+}
+/* #region animanion */
+main .bar1_container img{
+    width: 100%;
+    position: absolute;
+}
+main .bar1_container :first-child{
+    z-index: -6;
+}
+main .bar1_container :nth-child(2){
+    z-index: -7;
+    animation: part1 12s ease infinite;
+}
+main .bar1_container :last-child{
+    z-index: -7;
+    animation: part2 12s ease infinite;    
+}
+main .tx1{
+    z-index: -5;
+}
+main .tx2{
+    z-index: -7;
+    animation: partt1 12s ease infinite;
+}
+main .tx3{
+    z-index: -7;
+    animation: partt2 12s ease infinite;
+}
+@keyframes part1{
+    32%{
+        z-index: -7;
+    }
+    33%{
+        z-index: -4;
+    }
+    100%{
+        z-index: -4;
+    }
+}
+@keyframes part2{
+    65%{
+        z-index: -7;
+    }
+    66%{
+        z-index: -2;
+    }
+    100%{
+        z-index: -2;
+    }
+}
+@keyframes partt1{
+    32%{
+        z-index: -7;
+    }
+    33%{
+        z-index: -3;
+    }
+    100%{
+        z-index: -3;
+    }
+}
+@keyframes partt2{
+    65%{
+        z-index: -7;
+    }
+    66%{
+        z-index: -1;
+    }
+    100%{
+        z-index: -1;
+    }
+}
+/* #endregion */
+/* #endregion */
+/* #region main bar2 */ 
+.bar2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*  */
+.bar2_head{
+    margin-top: 70px;
+    text-align: center;
+    line-height: 50px;
+}
+.bar2_head h1{
+    font-weight: 100;
+}
+.bar2_head em{
+    color: #666;
+}
+/*  */
+.bar2_main{
+    line-height: 22px;
+    font-size: 14px;
+}
+/*  */
+.bar2_foot{
+    margin-top: 40px;
+    display: flex;
+}
+.bar2_foot_box{
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.bar2_foot_box img{
+    width: 60%;
+}
+/* #endregion */
+/* #region bar3 */
+.bar3{
+    margin-top: 90px;
+    background-color: black;
+    padding: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*  */
+.bar3_head{
+    margin-top: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.bar3_head h1{
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 100;
+}
+.bar3_head em{
+    color: #666;
+}
+/*  */
+.bar3_box1{
+    width: 740px;
+}
+.bar3_box1 ul{
+    margin-top: 30px;
+    background-color: white;
+    width:100%;
+}
+.bar3_box1 li{
+    color: #757575;
+    font-size: 15px;
+    border-bottom: 1px solid #757575;
+    padding: 12px;
+}
+.bar3_box1 .bar3_box1_so{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: 16px;
+}
+.bar3_box1 .bar3_box1_3{
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    float: right;
+    padding: 2px 8px;
+    display: inline-block;
+}
+/*  */
+.bar3_box2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 740px;
+}
+.bar3_box2_unbox{
+    background-color:white ;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.bar3_box2_unbox .bar3_box2_unbox_text{
+    padding:12px;
+    line-height: 36px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+}
+.bar3_box2_unbox_text :nth-child(1){
+    font-weight: 600;
+}
+.bar3_box2_unbox_text :nth-child(2){
+    color: #757575;
+}
+.bar3_box2_unbox_text :nth-child(3){
+    line-height: 20px;
+}
+.bar3_box2_unbox a{
+    color: white;
+    background-color: black;
+    padding: 2px 12px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.bar3_box2_unbox a:hover{
+    color: black;
+    background-color: #757575;
+}
+/* #endregion */
+/* #region bar4 */
+
+/* #endregion */
