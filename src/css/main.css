@@ -352,4 +352,24 @@ main .tx3{
     color: black;
     background-color: #b8b8b8;
 }
-/* #endregion 
+/* #endregion */
+/* #region responsibility */
+@media only screen and(max-width:830px) {
+    .bar1,.bar2,.bar3,.footer_bar1{
+        display: block;
+    }
+    .corecter{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 560px){
+    /* main bar1 */
+    .bar1_textbar{
+        display: none;
+    }
+    /* main bar2 */
+    .bar2{
+        padding: 0px 10px;
+    }
+}
+/*  */
