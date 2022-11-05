@@ -71,94 +71,16 @@ header>a:hover{
 }
 /* #endregion */
 /* #region main */
+main{
+    width: 100%;
+}
 /* #region main bar1*/
 .bar1{
-    height: 674px;
-}
-.bar1_textbar{
-    line-height: 50px;
-    font-weight: 10;
-    color: white;
-    position: absolute;
-    top: 550px;
     width: 100%;
-    text-align: center;
 }
-.bar1_textbar h2{
-    font-weight: 200;
-}
-/* #region animanion */
-main .bar1_container img{
+.bar1 img{
     width: 100%;
-    position: absolute;
 }
-main .bar1_container :first-child{
-    z-index: -6;
-}
-main .bar1_container :nth-child(2){
-    z-index: -7;
-    animation: part1 12s ease infinite;
-}
-main .bar1_container :last-child{
-    z-index: -7;
-    animation: part2 12s ease infinite;    
-}
-main .tx1{
-    z-index: -5;
-}
-main .tx2{
-    z-index: -7;
-    animation: partt1 12s ease infinite;
-}
-main .tx3{
-    z-index: -7;
-    animation: partt2 12s ease infinite;
-}
-@keyframes part1{
-    32%{
-        z-index: -7;
-    }
-    33%{
-        z-index: -4;
-    }
-    100%{
-        z-index: -4;
-    }
-}
-@keyframes part2{
-    65%{
-        z-index: -7;
-    }
-    66%{
-        z-index: -2;
-    }
-    100%{
-        z-index: -2;
-    }
-}
-@keyframes partt1{
-    32%{
-        z-index: -7;
-    }
-    33%{
-        z-index: -3;
-    }
-    100%{
-        z-index: -3;
-    }
-}
-@keyframes partt2{
-    65%{
-        z-index: -7;
-    }
-    66%{
-        z-index: -1;
-    }
-    100%{
-        z-index: -1;
-    }
-}
-/* #endregion */
 /* #endregion */
 /* #region main bar2 */ 
 .bar2{
@@ -222,12 +144,9 @@ main .tx3{
     color: #666;
 }
 /*  */
-.bar3_box1{
-    width: 740px;
-}
 .bar3_box1 ul{
     margin-top: 30px;
-    background-color: white;
+    background-color: #ffffff;
     width:100%;
 }
 .bar3_box1 li{
@@ -256,7 +175,7 @@ main .tx3{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    width: 740px;
+    width: 100%;
 }
 .bar3_box2_unbox{
     background-color:white ;
@@ -354,13 +273,11 @@ main .tx3{
 }
 /* #endregion */
 /* #region responsibility */
-@media only screen and(max-width:830px) {
-    .bar1,.bar2,.bar3,.footer_bar1{
-        display: block;
-    }
+@media only screen and (max-width:800px) {
     .corecter{
-        width: auto;
+        width: 100%;
     }
+    
 }
 @media only screen and (max-width: 560px){
     /* main bar1 */
@@ -369,7 +286,38 @@ main .tx3{
     }
     /* main bar2 */
     .bar2{
-        padding: 0px 10px;
+        padding: 0px 15px;
+    }
+    .bar2_foot{
+        flex-direction: column;
+    }
+    .bar2_foot_box{
+        width: 100%;
+    }
+    /* main bar3 */
+    .bar3{
+        padding: 80px 14px;
+    }
+    .bar3_box2{
+        flex-direction: column;
+    }
+    .bar3_box2_unbox{
+        margin-top: 20px;
+        width: 100%;
+    }
+    /* foooter */
+    .footer_bar1_box{
+        padding: 0px 14px;
+        flex-direction: column;
+    }
+    .footer_bar1_unbox1,.footer_bar1_unbox2{
+        width: 100%;
+    }
+    .footer_bar1_unbox2{
+        margin-top: 10px;
+    }
+    .footer_bar1_unbox2 input{
+        width: 100%;
     }
 }
-/*  */
+/* #endregion */
